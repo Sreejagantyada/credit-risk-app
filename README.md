@@ -3,7 +3,7 @@
 A machine learning web application that predicts the **likelihood of loan default** using customer financial and behavioral data.  
 The model helps financial institutions assess borrower risk and make informed lending decisions.  
 
-🚀 **Live App:** [https://sreeja-credit-risk-app.streamlit.app](https://credit-risk-predictor-by-sreeja.streamlit.app/)
+🚀 **Live App:** [https://credit-risk-predictor-by-sreeja.streamlit.app/](https://credit-risk-predictor-by-sreeja.streamlit.app/)
 
 ---
 
@@ -148,6 +148,7 @@ This repository is open for educational and academic use.
 If you find it helpful, please ⭐ **star the repo** or cite it in your work.  
 
 ---
+
 
 
 
