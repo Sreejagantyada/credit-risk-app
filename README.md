@@ -15,6 +15,35 @@ The final deployment uses an **XGBoost classifier** integrated with a **Streamli
 
 ---
 
+## 📊 Dataset Information  
+
+### 🗂 Source  
+The dataset used is inspired by the **Give Me Some Credit** dataset (publicly available on [Kaggle](https://www.kaggle.com/c/GiveMeSomeCredit)).  
+It contains **loan applicant financial histories** used to predict whether a person will experience serious delinquency (90+ days late) within the next two years.
+
+### 📑 Key Attributes
+| Feature | Description |
+|----------|-------------|
+| `SeriousDlqin2yrs` | Target variable — 1 if applicant defaulted, 0 otherwise |
+| `RevolvingUtilizationOfUnsecuredLines` | Total credit card balance to total credit limit ratio |
+| `age` | Age of the borrower |
+| `NumberOfTime30-59DaysPastDueNotWorse` | Times borrower was 30–59 days past due |
+| `DebtRatio` | Monthly debt payments / gross monthly income |
+| `MonthlyIncome` | Borrower’s monthly income |
+| `NumberOfOpenCreditLinesAndLoans` | Number of active credit accounts |
+| `NumberOfTimes90DaysLate` | Number of times borrower was 90+ days late |
+| `NumberRealEstateLoansOrLines` | Real estate loans or mortgage lines |
+| `NumberOfTime60-89DaysPastDueNotWorse` | Times borrower was 60–89 days past due |
+| `NumberOfDependents` | Number of dependents |
+
+### ⚙️ Preprocessing Summary
+- Removed obvious outliers in age and utilization features.  
+- Filled missing `MonthlyIncome` and `NumberOfDependents` with **median imputation**.  
+- Standardized skewed numeric features using **log transformation** where appropriate.  
+- Engineered new interaction features (see below).  
+
+---
+
 ## 🧠 Machine Learning Pipeline  
 
 ### 1️⃣ Data Preprocessing  
@@ -119,5 +148,6 @@ This repository is open for educational and academic use.
 If you find it helpful, please ⭐ **star the repo** or cite it in your work.  
 
 ---
+
 
 
