@@ -65,7 +65,7 @@ XGBoost showed the best trade-off between recall and precision for credit risk c
 |--------|-----------|---------|-----------|------|------|------|
 | Logistic Regression | Balanced | 0.75 | 0.20 | 0.32 | 0.49 | 0.85 |
 | Random Forest | Balanced | 0.30 | 0.42 | 0.35 | 0.31 | 0.83 |
-| **XGBoost** | **Balanced** | **0.30** | **0.46** | **0.36** | **0.33** | **0.86** |
+| **XGBoost** | **Balanced** | **0.81** | **0.18** | **0.36** | **0.47** | **0.86** |
 
 ### 3️⃣ Model Evaluation  
 - Optimized the decision threshold for **maximum F2 score** (to prioritize recall).  
@@ -148,6 +148,7 @@ This repository is open for educational and academic use.
 If you find it helpful, please ⭐ **star the repo** or cite it in your work.  
 
 ---
+
 
 
 
